@@ -1,0 +1,92 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .sidebar {
+    width: 250px; /* Width of the sidebar */
+    background-color: #257180; /* Sidebar background color */
+    color: white; /* Text color */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed sidebar */
+  }
+  
+  .dashboard-content {
+    flex-grow: 1; /* Take up remaining space */
+    margin-left: 250px; /* Leave space for the sidebar */
+    padding: 40px; /* Padding around content */
+    background-color: #f4f7fa; /* Light background for content */
+    
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .dashboard-content h1 {
+    font-size: 36px; /* Font size for the main title */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 30px; /* Spacing below heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  /* Input container styling */
+  .input-container {
+    display: flex; /* Flexbox for inputs */
+    margin-bottom: 20px; /* Spacing below inputs */
+  }
+  
+  /* List of classes */
+  .classes-list {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit the width of the class list */
+    margin-top: 20px; /* Spacing above */
+  }
+  
+  .niveau-section {
+    background-color: #fff; /* White background for each niveau section */
+    padding: 15px; /* Padding inside each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Spacing between sections */
+  }
+  
+  .niveau-section h3 {
+    color: #257180; /* Color for niveau headings */
+    margin-bottom: 10px; /* Spacing below niveau heading */
+  }
+  
+  .niveau-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  .niveau-section li {
+    padding: 10px; /* Padding for list items */
+    border-bottom: 1px solid #eee; /* Divider line */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  /* Last list item without border */
+  .niveau-section li:last-child {
+    border-bottom: none; /* Remove border for last item */
+  }
+  
+  /* Hover effect for list items */
+  .niveau-section li:hover {
+    background-color: #f7f9fc; /* Light background highlight on hover */
+  }
+  
+  /* Adjust button styles to match the design */
+  .MuiButton-root {
+    margin-left: 10px; /* Margin for buttons */
+    background-color: #257180; /* Primary color for buttons */
+    color: white; /* Button text color */
+  }
+  
+  /* Style for the input fields */
+  .MuiTextField-root,
+  .MuiSelect-root {
+    margin-right: 10px; /* Margin for inputs */
+  }
+  
