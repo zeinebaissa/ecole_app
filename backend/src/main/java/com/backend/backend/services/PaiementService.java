@@ -30,7 +30,7 @@ public class PaiementService {
         // Vérifiez si l'étude existe et liez-la au paiement
         Optional<Etude> etude = etudeRepository.findById(paiement.getEtude().getId_etude());
         if (etude.isPresent()) {
-            paiement.setEtude(etude.get());  // Associez l'étude complète
+            paiement.setEtude(etude.get());
         } else {
             throw new RuntimeException("Etude non trouvée pour l'ID : " + paiement.getEtude().getId_etude());
         }

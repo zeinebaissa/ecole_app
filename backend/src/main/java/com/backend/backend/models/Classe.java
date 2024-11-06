@@ -1,4 +1,5 @@
 package com.backend.backend.models;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -16,6 +17,7 @@ public class Classe {
     private String niveau_classe;
 
     @OneToMany(mappedBy = "classe")
+    @JsonManagedReference
     private List<Eleve> eleves;
 
     // Getters et Setters

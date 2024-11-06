@@ -1,5 +1,6 @@
 package com.backend.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import java.util.Date;
 
@@ -27,6 +28,7 @@ public class Eleve {
 
     @ManyToOne
     @JoinColumn(name = "id_classe")
+    @JsonBackReference
     private Classe classe;
 
     // Getters et Setters
